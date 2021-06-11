@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Outlet Details Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="progress progress-bar-vertical" style="height: 50px; width: 3px;">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <span class="border border-danger rounded-circle bg-danger px-1 fw-bolder">1</span>
+                            <h6 class="ml-5">Outlet Information</h6>
+                            <p class="text-secondary ml-5">Add outlet details</p>
+
+                            <span class="border border-secondary rounded-circle bg-secondary px-1 fw-bold">2</span>
+                            <h6 class="ml-5">Additional Details</h6>
+                            <p class="text-secondary ml-5">Legal details and documents</p>
+
+                            <span class="border border-secondary rounded-circle bg-secondary px-1 fw-bold">3</span>
+                            <h6 class="ml-5">Registration</h6>
+                            <p class="text-secondary ml-5">Create your login</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container" style="margin-left: 36rem; margin-top: -12rem;">
+            <div class="row">
+                <div class="col-md-8">
+                    <h5>Outlet Details</h5>
+                    <form style="margin-top: -1rem;">
+                        <div class="form-group w-75">
+                            <label for="outlet-name"></label>
+                            <input type="text" class="form-control" id="outlet-name" placeholder="Outlet name*" required>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="outlet-number"></label>
+                                    <input type="text" class="form-control" id="outlet-number"
+                                        placeholder="Phone number*" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="mail"></label>
+                                    <input type="email" class="form-control" id="mail" placeholder="Email address*" required>
+                                </div>
+                            </div>
+                            <label for="address"></label>
+                            <input type="text" class="form-control" id="address" placeholder="Delivery address*" required>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="city"></label>
+                                    <input type="text" class="form-control is-invalid" id="city" placeholder="City*" aria-describedby="validationServer03Feedback" required>
+                                    <div id="validationServer03Feedback" class="invalid-feedback">
+                                        City is Invalid.
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="state"></label>
+                                    <input type="text" class="form-control bg-light" id="state" placeholder="State*" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="pincode"></label>
+                                    <input type="number" class="form-control bg-light" id="pincode" placeholder="Pincode*" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="delivery"></label>
+                                    <select class="form-control" id="delivery" required>
+                                        <option>Delivery Time*</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <p class="mt-4">Have a referral code ?</p>
+                            <label for="ref-code"></label>
+                            <input type="number" class="form-control" id="ref-code" placeholder="Refferal code">
+
+                            <button type="submit" class="btn btn-secondary mt-4">Submit</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
